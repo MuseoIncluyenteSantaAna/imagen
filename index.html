@@ -1,8 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Imagen con ventana emergente</title>
+  <title>Información por pieza</title>
   <style>
+    body {
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .gallery img {
+      width: calc(50% - 10px);
+      margin-bottom: 20px;
+    }
+    
     .popup {
       display: none;
       position: fixed;
@@ -14,6 +32,7 @@
       width: 400px;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
       z-index: 9999;
+      color: black;
     }
     
     .popup-content {
@@ -48,28 +67,69 @@
   </style>
 </head>
 <body>
-  <h1>Imagen con ventana emergente</h1>
+  <h1>Información por pieza</h1>
   
-  <img src="1.jpg" alt="Imagen" onclick="openPopup()">
+  <div class="gallery">
+    <img src="1.jpg" alt="Imagen 1" onclick="openPopup(1)">
+    <img src="2.jpg" alt="Imagen 2" onclick="openPopup(2)">
+    <img src="3.jpg" alt="Imagen 3" onclick="openPopup(3)">
+    <img src="4.jpg" alt="Imagen 4" onclick="openPopup(4)">
+    <img src="5.jpg" alt="Imagen 5" onclick="openPopup(5)">
+  </div>
   
   <div id="popup" class="popup">
     <div class="popup-content">
       <span class="close" onclick="closePopup()">&times;</span>
-      <h2>Información de la imagen</h2>
-      <p>Aquí puedes agregar la información que deseas mostrar sobre la imagen.</p>
-      <button class="button">Botón</button>
+      <h2 id="popup-title">Información de la imagen</h2>
+      <p id="popup-description">Aquí puedes agregar la información que deseas mostrar sobre la imagen seleccionada.</p>
+      <button class="button" onclick="playAudio()">Reproducir audio</button>
     </div>
   </div>
 
   <script>
-    function openPopup() {
+    function openPopup(imageId) {
       var popup = document.getElementById("popup");
+      var title = document.getElementById("popup-title");
+      var description = document.getElementById("popup-description");
+
       popup.style.display = "block";
+
+      // Actualizar la información y el contenido de la ventana emergente según la imagen seleccionada
+      switch (imageId) {
+        case 1:
+          title.textContent = "Información de la imagen 1";
+          description.textContent = "Aquí puedes agregar la información que deseas mostrar sobre la imagen 1.";
+          break;
+        case 2:
+          title.textContent = "Información de la imagen 2";
+          description.textContent = "Aquí puedes agregar la información que deseas mostrar sobre la imagen 2.";
+          break;
+        case 3:
+          title.textContent = "Información de la imagen 3";
+          description.textContent = "Aquí puedes agregar la información que deseas mostrar sobre la imagen 3.";
+          break;
+        case 4:
+          title.textContent = "Información de la imagen 4";
+          description.textContent = "Aquí puedes agregar la información que deseas mostrar sobre la imagen 4.";
+          break;
+        case 5:
+          title.textContent = "Información de la imagen 5";
+          description.textContent = "Aquí puedes agregar la información que deseas mostrar sobre la imagen 5.";
+          break;
+        default:
+          title.textContent = "Información de la imagen";
+          description.textContent = "Aquí puedes agregar la información que deseas mostrar sobre la imagen seleccionada.";
+      }
     }
     
     function closePopup() {
       var popup = document.getElementById("popup");
       popup.style.display = "none";
+    }
+    
+    function playAudio() {
+      // Lógica para reproducir el audio deseado
+      console.log("Reproducir audio");
     }
   </script>
 </body>
