@@ -67,7 +67,7 @@
   </style>
 </head>
 <body>
-  <h1>INFORMACIÓN ESCULTURAS MACUILXOCHILT</h1>
+  <h1>Información por pieza</h1>
   
   <div class="gallery">
     <img src="3.jpg" alt="Imagen 1" onclick="openPopup(1)">
@@ -99,26 +99,32 @@
         case 1:
           title.textContent = "Información de la imagen 1";
           description.textContent = "Aquí puedes agregar la información que deseas mostrar sobre la imagen 1.";
+          popup.dataset.audio = "audio1.mp3";
           break;
         case 2:
           title.textContent = "Información de la imagen 2";
           description.textContent = "Aquí puedes agregar la información que deseas mostrar sobre la imagen 2.";
+          popup.dataset.audio = "audio2.mp3";
           break;
         case 3:
           title.textContent = "Información de la imagen 3";
           description.textContent = "Aquí puedes agregar la información que deseas mostrar sobre la imagen 3.";
+          popup.dataset.audio = "audio3.mp3";
           break;
         case 4:
           title.textContent = "Información de la imagen 4";
           description.textContent = "Aquí puedes agregar la información que deseas mostrar sobre la imagen 4.";
+          popup.dataset.audio = "audio4.mp3";
           break;
         case 5:
           title.textContent = "Información de la imagen 5";
           description.textContent = "Aquí puedes agregar la información que deseas mostrar sobre la imagen 5.";
+          popup.dataset.audio = "audio5.mp3";
           break;
         default:
           title.textContent = "Información de la imagen";
           description.textContent = "Aquí puedes agregar la información que deseas mostrar sobre la imagen seleccionada.";
+          popup.dataset.audio = "";
       }
     }
     
@@ -128,9 +134,17 @@
     }
     
     function playAudio() {
-      // Lógica para reproducir el audio deseado
-      console.log("Reproducir audio");
+      var popup = document.getElementById("popup");
+      var audioFile = popup.dataset.audio;
+      
+      if (audioFile) {
+        // Lógica para reproducir el audio deseado
+        var audio = new Audio(audioFile);
+        audio.play();
+      }
     }
   </script>
 </body>
 </html>
+
+
