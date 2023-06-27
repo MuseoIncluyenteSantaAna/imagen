@@ -93,7 +93,7 @@
   <section class="section">
   <h2>Bienvenidos a Nuestra Sala de Arqueología</h2>
   <p>Bienvenidos al fascinante espacio temático que combina la rica historia de Mesoamérica con el final de la época colonial. Sumérgete en nuestro recorrido donde destacamos la impresionante reproducción gráfica del Lienzo de Macuilxochitl, realizado alrededor de 1580, como uno de los elementos principales de nuestra exhibición.</p>
-  <button class="button" onclick="openPopup(11)">INTRODUCCIÓN</button>
+  <button class="button" onclick="openPopup(13)">INTRODUCCIÓN</button>
   </section>
 
   <div id="popup" class="section" style="display: none;">
@@ -125,92 +125,75 @@
     <div class="carousel-inner" role="listbox">
       <!-- Imágenes del carousel -->
       <div class="item active">
-        <img src="9.JPG" alt="Image 1" class="carousel-image">
+        <img src="modelado.jpg" alt="Image 1" class="carousel-image">
         <div class="carousel-caption">
           <button class="button" onclick="openPopup(1)">Más información</button>
         </div>
       </div>
       <div class="item">
-        <img src="10.JPG" alt="Image 2" class="carousel-image">
+        <img src="craneo.jpg" alt="Image 2" class="carousel-image">
         <div class="carousel-caption">
           <button class="button" onclick="openPopup(2)">Más información</button>
         </div>
       </div>
       <div class="item">
-        <img src="11.JPG" alt="Image 3" class="carousel-image">
+        <img src="ceramicadom.jpg" alt="Image 3" class="carousel-image">
         <div class="carousel-caption">
           <button class="button" onclick="openPopup(3)">Más información</button>
         </div>
       </div>
       <div class="item">
-        <img src="12.JPG" alt="Image 4" class="carousel-image">
+        <img src="cajetes.jpg" alt="Image 4" class="carousel-image">
         <div class="carousel-caption">
           <button class="button" onclick="openPopup(4)">Más información</button>
         </div>
       </div>
       <div class="item">
-        <img src="13.JPG" alt="Image 5" class="carousel-image">
+        <img src="piedragrab.jpg" alt="Image 5" class="carousel-image">
         <div class="carousel-caption">
           <button class="button" onclick="openPopup(5)">Más información</button>
         </div>
       </div>
       <div class="item">
-        <img src="14.JPG" alt="Image 6" class="carousel-image">
-         <button class="button" onclick="openPopup(6)">Más información</button>
+        <img src="arquitectura.jpg" alt="Image 6" class="carousel-image">
         <div class="carousel-caption">
-        
+        <button class="button" onclick="openPopup(6)">Más información</button>
         </div>
       </div>
       <div class="item">
-        <img src="15.JPG" alt="Image 7" class="carousel-image">
-         <button class="button" onclick="openPopup(7)">Más información</button>
+        <img src="hilado.jpg" alt="Image 7" class="carousel-image">
         <div class="carousel-caption">
-  
+        <button class="button" onclick="openPopup(7)">Más información</button>
         </div>
       </div>
       <div class="item">
-        <img src="16.JPG" alt="Image 8" class="carousel-image">
-         <button class="button" onclick="openPopup(8)">Más información</button>
+        <img src="acompañantes.jpg" alt="Image 8" class="carousel-image">
         <div class="carousel-caption">
-         
+        <button class="button" onclick="openPopup(8)">Más información</button>
         </div>
       </div>
       <div class="item">
-        <img src="17.JPG" alt="Image 9" class="carousel-image">
-         <button class="button" onclick="openPopup(9)">Más información</button>
+        <img src="cara.jpg" alt="Image 9" class="carousel-image">
         <div class="carousel-caption">
-          
+        <button class="button" onclick="openPopup(9)">Más información</button>
         </div>
       </div>
             <div class="item">
-        <img src="18.JPG" alt="Image 10" class="carousel-image">
-               <button class="button" onclick="openPopup(10)">Más información</button>
+        <img src="20.jpg" alt="Image 10" class="carousel-image">
         <div class="carousel-caption">
-         
+         <button class="button" onclick="openPopup(10)">Más información</button>
         </div>
       </div>
             <div class="item">
-        <img src="19.JPG" alt="Image 11" class="carousel-image">
+        <img src="figurillas.jpg" alt="Image 11" class="carousel-image">
         <div class="carousel-caption">
-          
+          <button class="button" onclick="openPopup(11)">Más información</button>
         </div>
       </div>
             <div class="item">
-        <img src="20.JPG" alt="Image 12" class="carousel-image">
+        <img src="latica.jpg" alt="Image 12" class="carousel-image">
         <div class="carousel-caption">
-          
-        </div>
-      </div>
-            <div class="item">
-        <img src="21.JPG" alt="Image 13" class="carousel-image">
-        <div class="carousel-caption">
-          
-        </div>
-      </div>
-            <div class="item">
-        <img src="22.JPG" alt="Image 14" class="carousel-image">
-        <div class="carousel-caption">
-          
+        <button class="button" onclick="openPopup(12)">Más información</button>  
         </div>
       </div>
     </div>
@@ -227,7 +210,7 @@
   </div>
   
   <footer>
-    <p>&copy; 2023 Museo Comunitario Ta Guil Reiñ de Santiago Matatlán | Todos los derechos reservados</p>
+    <p>&copy; 2023 Museo Comunitario Yiee Roo de San Mateo Macuilxóchilt | Todos los derechos reservados</p>
   </footer>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
@@ -242,56 +225,66 @@
       var title, description, audioFile;
       switch (id) {
         case 1:
-          title = "PUNTAS DE PROYECTIL.";
-          description = "Estas puntas de flechas o lanzas se elaboraron desprendiendo lascas de un núcleo de sílex. En el Palmillo, se encuentra una mayor cantidad de ellas en las residencias de bajo estatus.";
-          audioFile = "proyectil.mp3";
+          title = "Modelado y moldeado.";
+          description = "Las principales técnicas de elaboración cerámica eran el modelado y el moldeado, utilizadas para fabricar rápidamente piezas legando incluso a realizar piezas en serie; constantemente se encuentran elementos de alfarería prehispánica de gran tamaño, las cuales pertenecieron a piezas de gran tamaño muchas de más de un metro de altura. Estas piezas muestran el grado de refinamiento alcanzados por los alfareros zapotecas.";
+          audioFile = "modelado.mp3";
           break;
         case 2:
-          title = "PUNZONES Y SANGRADERAS";
-          description = "Probablemente estas piezas se utilizaban en rituales en donde individuos se sacrificaban y ofrecían su sangre a las deidades. En Mesoamérica prehispánica, la sangre se consideraba una importante fuerza vital.";
-          audioFile = "punzones.mp3";
+          title = "Cráneo";
+          description = "EI cráneo que observamos fue de un hombre de edad avanzada, esto lo sabemos debido a que sus dientes mostraban un avanzado estado de desgaste, principalmente en sus muelas donde inclusive han desaparecido las coronas de los dientes. Otra característica interesante es la deformación craneana qué nos muestra una de las prácticas mesoamericanas más extendidas. La deformación se lograba mediante la colocación de bandas en la cabeza de los niños mientras iban creciendo.";
+          audioFile = "craneo.mp3";
           break;
         case 3:
-          title = "ADORNOS DE CONCHA DE MAR";
-          description = "Adornos finos se elaboraban de concha de mar, como apreciamos a través de estos fragmentos tallados y tres pendientes completos. Dos se encontraron en la tumba de la plataforma 11, de 500 a 750 d.C.";
-          audioFile = "concha.mp3";
+          title = "Cerámica doméstica";
+          description = "La mayor parte de las piezas de barro encontradas en contextos arqueológicos son las relacionadas con la vajilla doméstica, principalmente usados en la preparación y servicio de alimentos. Muchas veces se encuentran estas piezas en contextos funerarios debido a que una vez muerta una persona se le colocaban ofrendas para la otra vida.";
+          audioFile = "ceramicadom.mp3";
           break;
         case 4:
-          title = "CUENTAS Y PENDIENTES DE PIEDRA VERDE";
-          description = "Pendientes y collares de piedra verde eran usadas en mayor cantidad por las familias de alto estatus. Aquí se muestran adornos de dos tumbas de familias nobles, de 500 a 750 años d.C.";
-          audioFile = "cuentas.mp3";
+          title = "Cajetes para el cordón umbilical";
+          description = "Una de las costumbres religiosas documentadas en el mundo prehispánico, es la relacionada con los ritos de paso de una persona, estas son las distintas prácticas y costumbres practicadas por una persona en momentos claves de su vida, el nacimiento, el matrimonio o la muerte son los ejemplos más importantes. Arqueológicamente en el cerro Danush se han identificado este tipo de ritos, en este ejemplo se muestra un Patojo localizado bajo una casa el cual estaba cubierto por un plato, estos servían para colocar el cordón umbilical de un recién nacido, la razón estaba relacionada con la conservación del tonalli o pèe, el cual se encontraba en todas las partes del cuerpo.";
+          audioFile = "cajetes.mp3";
           break;
         case 5:
-          title = "FIGURILLAS Y SILBATO";
-          description = "Las figurillas moldeadas de cerámica nos muestran el tipo de tocados y vestimenta que se ocupaban.  Una de estas muestra una armadura de algodón, bastón y escudo. También se incluye un silbato en forma de pájaro.";
-          audioFile = "figurillas.mp3";
+          title = "Piedras grabadas en el templo";
+          description = "Al momento de la conquista española, muchos de los edificios civiles y religiosos fueron desmantela dos para la construcción de los nuevos recintos para el culto católico. Ejemplos de los viejos monumentos aún se pueden encontrar en sitios como Teotitlán del Valle y Macuilxochitl, en este templo se aprecian dos piedras labradas que probablemente formaban parte de alguna de las estructuras del sitio durante el periodo Clásico Tardio (650-850 d.C.). En esta época se realizaban muchas piezas que mostraban genealogías de gobernantes con la finalidad de legitimar los gobiernos locales.";
+          audioFile = "piedras.mp3";
           break;
          case 6:
-          title = "EL JUEGO DE PELOTA";
-          description = "En Mesoamérica el juego de pelota servía para la negociación de relaciones de poder entre grupos rivales y la ascensión de los gobernantes. Es posible que la construcción de la cancha esté asociada a rituales para legitimar los derechos de los señores de El Palmillo cuando el poder de Monte Albán se estaba fragmentando.";
-          audioFile = "pelota.mp3";
+          title = "Arquitectura Posclásica e Influencia Mixteca- Piedras Grabadas con Grecas";
+          description = "Con el desarrollo político y crecimiento en influencia de los grupos mixtecos se abandona el estilo jeroglífico predominante y las inscripciones se tornan mucho más abstractas desarrollando paulatinamente dos diseños conocidos como grecas las cuales se han registrado en sitios como Yagul Teotitlán del Valle y en Mitla donde alcanzaron su mayor refinamiento";
+          audioFile = "arqui.mp3";
           break;
         case 7:
-          title = "OFRENDAS: URNAS";
-          description = "Urnas zapotecas son objetos rituales que han sido encontrados en contextos funerarios o como ofrendas. Estuvieron en uso entre los zapotecos de los Valles Centrales y partes de la Sierra Norte desde 200 a 850 después de Cristo. En ocasiones fueron rotas o quemadas durante rituales practicadas mucho después del entierro original. Se encuentran en los escombros de las casas de todas las clases sociales y muchas veces en un estado completo adentro de la tumba familiar. Frecuentemente representan figuras humanas vestidas de Cocijo, el principal ente sobrenatural asociado con la lluvia y el trueno.";
-          audioFile = "ofrendas.mp3";
+          title = "Hilado";
+          description = "Una de las actividades económicas más importantes en los pueblos del valle de Tlacolula fue y sigue siendo la producción textil, Macuilxochitl no es la excepción pues tiene una larga tradición de tejidos artesanales. Este tipo de artesanías la podemos encontrar en el registro arqueológico en la forma de los implementos necesarios para el tejido como: malacates usados para fabricar el hilo; agujas asadas para incrustar el hilo en los telares, e inclusive se han encontrado trazas de tejidos prehispánicos.";
+          audioFile = "hilado.mp3";
           break;
         case 8:
-          title = "COSTUMBRES FUNERARIAS";
-          description = "Al morirse es probable que se creyera que los jefes de familia se convirtieron en espíritus que pudieron interceder por los vivos ante los dioses para proporcionarles beneficios en forma de lluvias y cosechas de maíz entre otras cosas. Los habitantes prehispánicos de El Palmillo y del resto del Valle de Oaxaca enterraban sus muertos en su complejo doméstico, en tumbas subterráneas, debajo de los pisos de cuartos y patios y en las paredes. Después de estos entierros, se realizaban ritos afuera de la entrada de las tumbas.";
-          audioFile = "funeraria.mp3";
+          title = "Acompañantes";
+          description = "Los llamados acompañantes, reciben este nombre debido a que se encuentran acompañando a una persona difunta en su rumba, son encontrados desde el Preclásico terminal (0-250 d.C.), y hasta el Clásico Tardío (650-850 d.C.), por lo general, presentan una mitra decorada con atributos de algún dios. En el ejemplo que se muestra, encontramos un acompañante con la representación de Pitao Coçobi, dios del maíz, y dos urnas prácticamente iguales con el tocado del Glifo C. Estas piezas caracterizan a un personaje en cunclillas con las manos sobre las rodillas y las piernas cruzadas en “flor de loto" o “al estilo oriental". En su tocado porta el emblema del dios Cocijo, el glifo "C", lo que distingue a esta figura es una máscara bucal en forma de mandíbula de serpiente, en este caso únicamente en la mandíbula superior, por lo que también está relacionado con el dios del viento; Pichijlla.";
+          audioFile = "acompa.mp3";
           break;
         case 9:
-          title = "ELABORACIÓN DE TEXTILES";
-          description = "La presencia de muchos instrumentos para la elaboración de textiles en El Palmillo indica que esta labor era fundamental para su economía. En todas las casas del sitio se encontraron malacates para hacer hilo. En varias terrazas se excavaron pequeños cuencos de piedra que servían para apoyar un extremo del uso. Otros objetos usados para elaborar telas son punzones y agujas de hueso. También se hallaron piezas de hueso que podrían haber servido como las partes de un telar de cintura";
-          audioFile = "Textiles.mp3";
+          title = "Cara con deformación dental y diente";
+          description = "Estas piezas nos muestran otro elemento ritual de los antiguos pueblos mesoamericanos, la deformación dentaria; esta se lograba tallando, perforando los dientes e incluso se llegaba a incrustar piedras preciosas a manera de adorno. Esta práctica únicamente era llevada a cabo por el sector noble de la sociedad y funcionaba como un indicador de estatus social.";
+          audioFile = "caracondef.mp3";
           break;
         case 10:
-          title = "EL PULQUE";
-          description = "La pareja noble de Señora 10 Venado y Señor 8 Viento comparte pulque en una ceremonia. El pulque era una bebida importante en Mesoamérica, asociada con rituales y peticiones a los dioses. Se encontró una herramienta de hueso en El Palmillo que se usaba como pajilla para beber pulque. Escenas de personas bebiendo pulque con una pajilla aparecen en códices.";
-          audioFile = "Pulque.mp3";
+          title = "Macuilxóchitl y la cultura zapoteca";
+          description = "El pueblo de San Mateo Macuilxóchit tiene una historia que recorre más de 2700 años en los que han crecido y desaparecido Imperios y ciudades, los cuales han peleado por el control de este importante lugar, clave en el comercio del altiplano y la costa. Los orígenes de esta población, están ligados con el establecimiento de una aldea aproximadamente en el año 700 a.C la cual estaba dominada por un sitio del área donde actualmente se encuentra Lambityeco. Sin embargo, al momento en que Monte Alban se constituyó como el sitio más importante de Oaxaca, surgió la necesidad del control del Valle de Tlacolula dada su importancia comercial con la costa, lo que motivó el crecimiento del sito de Dainzú, ubicado estratégicamente en el centro de este valle, dominando esta ruta comercial. ";
+          audioFile = "macycult.mp3";
           break;
         case 11:
+          title = "Figurillas y animales, silbatos";
+          description = "Fuera del ámbito público donde se realizaban los ritos religiosos de la comunidad en las grandes plazas dé los sitios arqueológicos, existía una religión doméstica más sencilla en sus formas pero igual de importante para las personas que la practicaban; rastros de esta religión doméstica la podemos ubicar arqueológicamente en las figurillas de batro que son encontradas en las casas de la gente Entre otras cosas podemos apreciar aspectos de la vida diaria como su vestimenta, adornos personales, características físicas, e incluso-animales con los que convivían.";
+          audioFile = "figurillas.mp3";
+          break;
+        case 12:
+          title = "Lítica tallada, excéntricos, navajillas y flechas";
+          description = "Las herramientas piedra pueden trabajarse de dos formas, tallándolas, que consiste en golpear la piedra de distintas maneras para lograr el quiebre deseado y puliéndolas, que es obtener la forma de la herramienta mediante abrasión, en esta vitrina podemos observar varios ejemplos de herramientas que se pueden fabricar mediante la talla, como puntas de flecha, cuchillos, raederas y otros implementos más especializados como navajillas prismáticas. Elementos religiosos como los excéntricos en media luna y en forma de tres gotas tienen relación con el sacrificio humano pues representan gotas de sangre que fluyen de un corazón.";
+          audioFile = "litica.mp3";
+          break;
+        case 13:
           title = "San Mateo Macuilxóchitl un verdadero museo comunitario";
           description = "El recorrido muestra objetos prehispánicos de la vida cotidiana que aún se utilizan en la actualidad, como vasijas utilizadas para preparar alimentos. También se exhiben objetos de cerámica y piedra que reflejan la continuidad de usos y costumbres en Mesoamérica. Se destaca la presencia de la iconografía animal, especialmente del búho, que se sigue comercializando en la región de Oaxaca. Además, se aborda el concepto de Nahualismo, que ha influido profundamente en la vida de la comunidad tanto en el pasado como en la actualidad. El Nahualismo es una asociación de una persona con un animal, y a través de rituales de transformación, uno puede convertirse en nahual. Esto se representa en urnas de cerámica que simbolizan la transformación de una persona a un animal o un ser antropomorfo. La tradición Zapoteca sigue viva en la región a pesar de la influencia de la religión y las ideas españolas en su época.";
           audioFile = "6_Introducción.mp3";
